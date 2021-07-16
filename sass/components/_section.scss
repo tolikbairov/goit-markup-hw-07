@@ -1,0 +1,18 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-title {
+  color: $title-text-color;
+  font-weight: 700;
+  margin: 0 auto 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.section--no-btm-padding {
+  padding-bottom: 0;
+}
+.section--bg-color--gray {
+  background-color: $filter-bg-color;
+}

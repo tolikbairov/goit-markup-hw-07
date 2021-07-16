@@ -1,0 +1,39 @@
+.subscription-form {
+  @include centered__flex;
+  height: 50px;
+}
+.subscription-form__field {
+  /*  position: relative; */
+  display: block;
+  min-width: 358px;
+  height: 100%;
+  margin-right: 12px;
+}
+.subscription-form__input {
+  width: 100%;
+  height: 100%;
+  color: $primary-white-color;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.subscription-form__button {
+  /*   width: 200px; */
+  /*  height: 100%; */
+  @include centered__flex;
+
+  /*  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+}
+.sub-button__text {
+  margin-right: 10px;
+}
+.sub-button__icon {
+  fill: $primary-white-color;
+  width: 24px;
+  height: 24px;
+}

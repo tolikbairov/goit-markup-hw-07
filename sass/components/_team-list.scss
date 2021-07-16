@@ -1,0 +1,18 @@
+.team-list {
+  @include centered__flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+.team-list__item {
+  background-color: $primary-white-color;
+  flex-basis: calc((100% / 4) - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  justify-content: center;
+
+  /* line-height: 1.88; */
+
+  border-radius: 0px 0px 4px 4px;
+}

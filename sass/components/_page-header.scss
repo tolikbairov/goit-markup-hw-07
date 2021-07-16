@@ -1,0 +1,30 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+.page-header__layout {
+  @include centered__flex;
+  height: 80px;
+
+  width: 100%;
+}
+.page-header__nav {
+  @include centered__flex;
+}
+.page-header__logo {
+  margin-right: 93px;
+}
+.page-header__contact {
+  margin-left: auto;
+
+  /* height: 100%; */
+}
+.page-header__link {
+  font-weight: 500;
+
+  letter-spacing: 0.02em;
+  transition: color $trans-time $cubic-const;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

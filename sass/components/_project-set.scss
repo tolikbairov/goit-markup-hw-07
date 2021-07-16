@@ -1,0 +1,13 @@
+.project-set {
+  @include centered__flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+.project-set__item {
+  flex-basis: calc((100% / 3) - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid $border-color;
+  /*   overflow: hidden; */
+}

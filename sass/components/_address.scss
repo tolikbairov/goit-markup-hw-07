@@ -1,0 +1,20 @@
+.address__text {
+  color: $primary-white-color;
+}
+.address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  & > *:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.address__link {
+  color: $address--link-color;
+  transition: color $trans-time $cubic-const;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

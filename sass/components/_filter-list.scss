@@ -1,0 +1,47 @@
+.filter-list {
+  @include centered__flex;
+  margin-bottom: 34px;
+}
+.filter-list__item {
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 9px;
+  }
+}
+
+.filter-list__button {
+  position: relative;
+  background-color: $filter-bg-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  padding: 6px 22px;
+  transition: color $trans-time $cubic-const,
+    background-color $trans-time $cubic-const;
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    /* Create the box shadow at expanded size. */
+
+    /* Hidden by default. */
+    opacity: 0;
+    transition: opacity $trans-time $cubic-const;
+  }
+  &:hover::before,
+  &:focus:before {
+    opacity: 1;
+  }
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-white-color;
+  }
+}

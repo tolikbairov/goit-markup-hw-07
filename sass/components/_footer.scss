@@ -1,0 +1,32 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $secondary-bg-color;
+}
+.footer-layout {
+  display: flex;
+  justify-content: center;
+}
+.footer__logo {
+  margin-bottom: 20px;
+}
+.logo__text--color--white {
+  color: $primary-white-color;
+}
+.footer__column--left {
+  margin-right: 70px;
+}
+.footer__column--middle {
+  margin-right: auto;
+}
+.footer__social,
+.footer__subscribe {
+  padding-top: 12px;
+}
+.footer__join-text {
+  display: block;
+  line-height: 1.14;
+  color: $primary-white-color;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}

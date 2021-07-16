@@ -1,0 +1,21 @@
+.contact {
+  @include centered__flex;
+}
+.contact__item {
+  @include centered__flex;
+  color: $primary-text-color;
+  line-height: normal;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.contact__icon {
+  margin-right: 10px;
+
+  fill: $primary-text-color;
+  transition: fill $trans-time $cubic-const;
+  .contact__item:hover &,
+  .contact__item:focus & {
+    fill: $accent-color;
+  }
+}

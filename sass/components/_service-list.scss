@@ -1,0 +1,8 @@
+.service-list {
+  @include centered__flex;
+}
+.service-list__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
