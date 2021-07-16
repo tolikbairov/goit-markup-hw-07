@@ -36,29 +36,43 @@
               <li class="site-nav__item">
                 <a
                   href="./index.html"
-                  class="site-nav__link site-nav__link--current link"
+                  class="
+                    site-nav__link site-nav__link--current
+                    link
+                    page-header__link
+                  "
                   >Студия</a
                 >
               </li>
               <li class="site-nav__item">
-                <a href="./portfolio.html" class="site-nav__link link"
+                <a
+                  href="./portfolio.html"
+                  class="site-nav__link link page-header__link"
                   >Портфолио</a
                 >
               </li>
               <li class="site-nav__item">
-                <a href="" class="site-nav__link link">Контакты</a>
+                <a href="" class="site-nav__link link page-header__link"
+                  >Контакты</a
+                >
               </li>
             </ul>
           </nav>
           <div class="page-header__contact">
-            <a href="mailto:info@devstudio.com" class="contact__item link">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contact__item link page-header__link"
+            >
               <svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               <div class="contact__text">info@devstudio.com</div>
             </a>
 
-            <a href="tel:+380961111111" class="contact__item link">
+            <a
+              href="tel:+380961111111"
+              class="contact__item link page-header__link"
+            >
               <svg class="contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -387,8 +401,10 @@
       </section>
     </main>
     <section class="section">
-      <div class="container">
-        <h2 class="section-title">Постоянные клиенты</h2>
+      <div class="container client-box">
+        <h2 class="section-title client-box__section-title">
+          Постоянные клиенты
+        </h2>
         <ul class="client-list list">
           <li class="client-list__item">
             <a href="" class="client-list__link link"
@@ -439,31 +455,22 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-layout">
-          <div class="footer-layout--left">
-            <a href="./index.html" class="logo">
-              <span class="logo__text logo__text--first">Web</span
-              ><span
-                class="logo__text logo__text--second logo__text--color--dark"
-                >Studio</span
-              >
+          <div class="footer__column--left">
+            <a href="./index.html" class="logo footer__logo">
+              <span class="logo__text logo__text--color--accent">Web</span
+              ><span class="logo__text logo__text--color--white">Studio</span>
             </a>
             <address class="address">
-              <p class="address__item address__item--color--opacity">
-                г. Киев, пр-т Леси Украинки, 26
-              </p>
-              <a
-                href="mailto:info@devstudio.com"
-                class="address__item address__item--color--non-opacity link"
+              <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+              <a href="mailto:info@devstudio.com" class="address__link link"
                 >info@devstudio.com</a
               >
-              <a
-                href="tel:+380961111111"
-                class="address__item address__item--color--non-opacity link"
+              <a href="tel:+380961111111" class="address__link link"
                 >+38 096 111 11 11</a
               >
             </address>
           </div>
-          <div class="footer-layout--middle">
+          <div class="footer__column--middle">
             <div class="footer__social">
               <b class="footer__join-text">присоеденяйтесь</b>
               <ul class="social-list list footer__social-list">
@@ -473,7 +480,7 @@
                     class="
                       social-list__link
                       link
-                      social-list__link--bgc--non-opacity
+                      social-list__link--non-opacity
                     "
                     ><svg
                       class="social-list__icon social-list__icon--fill--white"
@@ -488,7 +495,7 @@
                     class="
                       social-list__link
                       link
-                      social-list__link--bgc--non-opacity
+                      social-list__link--non-opacity
                     "
                     ><svg
                       class="social-list__icon social-list__icon--fill--white"
@@ -503,7 +510,7 @@
                     class="
                       social-list__link
                       link
-                      social-list__link--bgc--non-opacity
+                      social-list__link--non-opacity
                     "
                     ><svg
                       class="social-list__icon social-list__icon--fill--white"
@@ -516,7 +523,7 @@
                   <a
                     href=""
                     class="
-                      social-list__link social-list__link--bgc--non-opacity
+                      social-list__link social-list__link--non-opacity
                       link
                     "
                     ><svg
@@ -529,93 +536,100 @@
               </ul>
             </div>
           </div>
-          <div class="footer-layout--right">
-            <b class="footer__join-text">подпишитесь на рассылку</b>
-            <form class="subscription-form">
-              <label class="subscription-form__field"
-                ><!-- <span class="email-label">Email</span> -->
-                <input
-                  type="email"
-                  name="email"
-                  class="subscription-form__input"
-                  placeholder="E-mail"
-                  required
-              /></label>
-              <button
-                class="subscription-form__button button sub-button"
-                type="submit"
-              >
-                <span class="sub-button__text">Подписаться</span>
-                <svg class="sub-button__icon">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </form>
+          <div class="footer__column--right">
+            <div class="footer__subscribe">
+              <b class="footer__join-text">подпишитесь на рассылку</b>
+              <form class="subscription-form">
+                <label class="subscription-form__field"
+                  ><!-- <span class="email-label">Email</span> -->
+                  <input
+                    type="email"
+                    name="email"
+                    class="subscription-form__input"
+                    placeholder="E-mail"
+                    required
+                /></label>
+                <button
+                  class="
+                    subscription-form__button
+                    button
+                    sub-button
+                    button--big
+                  "
+                  type="submit"
+                >
+                  <span class="sub-button__text">Подписаться</span>
+                  <svg class="sub-button__icon">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </footer>
     <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal__button" data-modal-close>
-          <svg class="modal__icon">
+        <button type="button" class="close-modal__button" data-modal-close>
+          <svg class="close-modal__icon">
             <use href="./images/icons.svg#icon-close-modal"></use>
           </svg>
         </button>
-        <div class="form-container">
-          <b class="modal__text">Оставьте свои данные, мы вам перезвоним</b>
+        <div class="modal-container">
+          <b class="modal__title">Оставьте свои данные, мы вам перезвоним</b>
           <form class="callback-form">
-            <div class="field-list">
-              <label class="callback-form__field"
-                ><span class="callback-form-label">Имя</span>
+            <div class="field-list callback-form__field-list">
+              <label class="field-list__item"
+                ><span class="field-list__label">Имя</span>
                 <input
                   type="text"
                   name="name"
-                  class="callback-form__input"
+                  class="field-list__input"
                   placeholder=" "
                   required
                 />
-                <svg class="callback-form__icon">
+                <svg class="field-list__icon">
                   <use href="./images/icons.svg#icon-person"></use>
                 </svg>
               </label>
-              <label class="callback-form__field"
-                ><span class="callback-form-label">Телефон</span
+              <label class="field-list__item"
+                ><span class="field-list__label">Телефон</span
                 ><input
                   type="tel"
                   name="tel"
-                  class="callback-form__input"
+                  class="field-list__input"
                   placeholder=" "
                   required
                 />
-                <svg class="callback-form__icon">
+                <svg class="field-list__icon">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
               </label>
-              <label class="callback-form__field"
-                ><span class="callback-form-label">Почта</span
+              <label class="field-list__item"
+                ><span class="field-list__label">Почта</span
                 ><input
                   type="email"
                   name="email"
-                  class="callback-form__input"
+                  class="field-list__input"
                   placeholder=" "
                   required
                 />
-                <svg class="callback-form__icon">
+                <svg class="field-list__icon">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
               </label>
-              <label class="callback-form__field"
-                ><span class="callback-form-label">Комментарий</span>
+              <label class="field-list__item"
+                ><span class="field-list__label">Комментарий</span>
                 <textarea
                   name="comment"
-                  class="callback-form__comment-area"
+                  class="field-list__comment-area"
                   rows="6"
                   placeholder="Введите текст"
                 ></textarea>
               </label>
             </div>
-            <label class="callback-form__agreement-checkbox"
+            <label class="agreement-checkbox callback-form__agreement-checkbox"
               ><input
                 class="agreement-checkbox__input"
                 type="checkbox"
@@ -627,16 +641,18 @@
               <svg class="agreement-checkbox__icon">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
-              <span class="agreement-text">
+              <span class="agreement-checkbox__text">
                 Соглашаюсь с рассылкой и принимаю
-                <a href="" class="agreement__link link">Условия договора</a>
+                <a href="" class="agreement-checkbox__link link"
+                  >Условия договора</a
+                >
               </span>
             </label>
             <button
-              class="callback-form__button button sub-button"
+              class="callback-form__sub-button button sub-button button--big"
               type="submit"
             >
-              <span class="sub-button__text">Отправить</span>
+              Отправить
             </button>
           </form>
         </div>
